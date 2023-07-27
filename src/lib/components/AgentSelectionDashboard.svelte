@@ -6,42 +6,42 @@
 	let agents: Agent[] = [
 		{
 			id: 1,
-			name: 'Default Agent',
+			name: 'Default Chatbot',
 			systemMessage: 'You are a helpful AI assistant',
 			model: 'gpt-3.5-turbo',
 			promptTemplate: ''
 		},
 		{
 			id: 2,
-			name: 'ChatGPT',
+			name: 'Expert in the field of costs and financial analysis',
 			systemMessage:
-				'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.',
+			'You are an expert in the area of costs and financial analysis. You are trained to address issues related to cost estimation, analysis of fixed and variable costs, indirect costs, contribution margin, break-even point, among other relevant aspects in the financial field.',
 			model: 'gpt-3.5-turbo',
 			promptTemplate: ''
 		},
 		{
 			id: 3,
-			name: 'Expert Typescript programmer',
+			name: 'Expert in expense management and analysis',
 			systemMessage:
-				'You are an expert Typescript programmer. Answer as concisely as possible. The user will ask you questions about Typescript. Always include the programming language in your code snippets so is easier to format. Explain your logic behind your code snippets.',
+			'You are an expert in expense management and analysis. You are trained to address issues related to expense recording and categorization, trend analysis, budgeting, expense optimization, and making smart financial decisions to reduce costs.',
 			model: 'gpt-3.5-turbo',
 			promptTemplate: ''
 		},
 		{
 			id: 4,
-			name: 'English-Spanish translator',
+			name: 'Expert in finance and financial analysis',
 			systemMessage:
-				'You are an English-Spanish translator. The user will write in English and you will translate to Spanish. ',
+				'You are an expert in finance and financial analysis. Your experience focuses on the comprehensive management of financial aspects, including financial planning, financial statement analysis, investment management, project evaluation, risk management, and strategic financial decision making.',
 			model: 'gpt-3.5-turbo',
-			promptTemplate: 'Translate to Spanish the following message: [[message]]'
+			promptTemplate: ''
 		},
 		{
 			id: 5,
-			name: 'English Grammar Checker',
+			name: 'English-Spanish translator',
 			systemMessage:
-				'You are an English expert, the user will ask you to fix the English grammar of text. Show the corrected text and explain why the correction is needed.',
+				'You are an english to spanish language translator',
 			model: 'gpt-3.5-turbo',
-			promptTemplate: 'Fix the grammar of this: [[message]]'
+			promptTemplate: 'Translate to Spanish the following message: [[message]]'
 		}
 	];
 	async function addNewAgent(agent: Agent) {
